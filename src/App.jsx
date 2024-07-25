@@ -4,20 +4,20 @@ const App = () => {
   
   const slides = [
     {
-      url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
+      url: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
     },
     {
-      url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+      url: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
     },
     {
-      url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
+      url: 'https://img.freepik.com/premium-photo/beautiful-lake-natural-landscape-photography-wallpaper-relax-joyful-illustration_327903-1578704.jpg',
     },
 
     {
-      url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
+      url: 'https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp',
     },
     {
-      url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
+      url: 'https://res.cloudinary.com/jerrick/image/upload/v1707195361/65c1bbe184fa66001d1faa64.jpg',
     },
   ];
 
@@ -57,7 +57,7 @@ const App = () => {
           </div>
         </div>
         <div className="absolute bottom-10 flex w-full items-end justify-center gap-4 z-50">
-            {slides.map((slide, slideIndex) => (<span key={slideIndex} className={currIndex === slideIndex ? "w-4 h-4 border-1 border-black bg-white rounded-full duration-150 cursor-pointer" : "w-3 h-3 bg-white rounded-full hover:w-4 hover:h-4 duration-150 cursor-pointer"} onClick={() => gotoSlide(slideIndex)}></span>))}
+            {slides.map((slide, slideIndex) => (<span key={slideIndex} className={currIndex === slideIndex ? "w-4 h-4 border-2 border-black bg-white rounded-full duration-150 cursor-pointer" : "w-3 h-3 bg-white rounded-full hover:w-4 hover:h-4 duration-150 cursor-pointer"} onClick={() => gotoSlide(slideIndex)}></span>))}
         </div>
       </div>
     </div> 
