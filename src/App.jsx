@@ -84,7 +84,7 @@ const App = () => {
           </div>
         </div> */}
         <div className="w-full px-5 flex flex-col gap-5 lg:flex-row justify-center items-center  absolute bottom-32">
-          <div id="contents" className="flex w-96 bg-black/70 px-6 py-4 left-10 gap-4 transition-all duration-200 cursor-default z-50 text-white">
+          <div id="contents" className="flex w-96 bg-black/70 px-6 py-4 left-10 gap-6 transition-all duration-200 cursor-default z-50 text-white">
             {slides.map((i, index) => (<div id="content" key={index} className={currIndex === index ? "flex flex-col" : "hidden"}>
             <h2 className='text-4xl mb-5 uppercase font-thin'>{slides[index].title}</h2>
             <p className='text-xs font-thin'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, sequi corporis labore unde eos nulla dolorem reprehenderit laboriosam ullam. Provident voluptate corporis iste facere nam, in ipsa sapiente numquam, corrupti qui fugit. Amet minus minima molestias eum, aliquid possimus harum dolore asperiores suscipit! Maiores eaque maxime reiciendis, enim illo error.</p>
@@ -93,7 +93,7 @@ const App = () => {
             </div>
 
           <div id="slides" className="lg:flex text-white w-full hidden justify-center items-center lg:justify-end lg:items-center gap-2 z-50">
-              {slides.map((i, index) => (<div id="slide" key={index} style={{backgroundImage: `url(${slides[index].url})`, cursor: "pointer", }} className={currIndex === index ? "w-60 h-60 rounded-3xl border-[3px] border-white bg-cover bg-center bg-white" : "w-48 h-48 rounded-lg bg-cover bg-center bg-white"}  onClick={() => gotoSlide(index)}></div>))}
+              {slides.map((i, index) => (<div id="slide" key={index} style={{backgroundImage: `url(${slides[index].url})`, cursor: "pointer", }} className={currIndex === index ? "w-60 h-60 rounded-3xl border-[3px] border-white bg-cover bg-center bg-white" : "w-32 h-32 rounded-lg bg-cover bg-center bg-white"}  onClick={() => gotoSlide(index)}></div>))}
           </div>
         </div>
         <div id="dots" className="absolute bottom-10 flex w-full items-end justify-center gap-4 z-50">
