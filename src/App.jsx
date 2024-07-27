@@ -92,8 +92,8 @@ const App = () => {
             </div>))}
             </div>
 
-          <div id="slides" className="lg:flex text-white w-full hidden justify-center items-center lg:justify-end lg:items-end gap-2 z-50">
-              {slides.map((i, index) => (<div id="slide" key={index} style={{backgroundImage: `url(${slides[index].url})`, cursor: "pointer", }} className={currIndex === index ? "lg:w-52 lg:h-60 w-48 h-52 rounded-lg border-[3px] border-white bg-cover bg-center bg-white" : "w-36 h-52 rounded-lg bg-cover bg-center bg-white"}  onClick={() => gotoSlide(index)}></div>))}
+          <div id="slides" className="lg:flex text-white w-full hidden justify-center items-center lg:justify-end lg:items-center gap-2 z-50">
+              {slides.map((i, index) => (<div id="slide" key={index} style={{backgroundImage: `url(${slides[index].url})`, cursor: "pointer", }} className={currIndex === index ? "w-60 h-60 rounded-3xl border-[3px] border-white bg-cover bg-center bg-white" : "w-48 h-48 rounded-lg bg-cover bg-center bg-white"}  onClick={() => gotoSlide(index)}></div>))}
           </div>
         </div>
         <div id="dots" className="absolute bottom-10 flex w-full items-end justify-center gap-4 z-50">
